@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" /> 
+    <title>Hangout Apps</title>
+    <style>
+	  html,body {
+		height: 100%;
+	  }
+      body {
+        display: flex;
+		flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+      .appButton {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 160px;
+		padding: 5px 5px 25px;
+		border: 1px solid black;
+		border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <div class="appButton">
+      <h3>Names From a Hat</h3>
+      <div class="g-hangout" data-render="createhangout"
+          data-initial_apps="[{ app_id : '642857702678', start_data : 'dQw4w9WgXcQ', 'app_type' : 'ROOM_APP'  }]">
+      </div>
+    </div>
+  </body>
+</html>
